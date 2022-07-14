@@ -1,0 +1,14 @@
+{
+  "database": {
+    "host": "localhost",
+    "port": "5432",
+    "db_name": "goods",
+    "ssl_mode": "disable",
+    "user": "postgres",
+    "password": "pass"
+  },
+  "app": {
+    "bind_addr": ":8000",
+    "log_level": "debug"
+  }
+}
