@@ -30,3 +30,6 @@ CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 
 go run main.go или go build & ./parser
 ```
+
+### Результат в БД
+![img.png](img.png)

@@ -3,7 +3,6 @@ package storage
 import (
     "fmt"
     _ "github.com/lib/pq"
-    log "github.com/sirupsen/logrus"
     "gorm.io/driver/postgres"
     "gorm.io/gorm"
     "parser/internal/config"
@@ -28,7 +27,6 @@ func (s *Storage) Open(cfg *config.Config) error {
         panic("failed to connect database")
     }
 
-    log.Info(db_models.Goods{})
     if err := db.AutoMigrate(&db_models.Goods{}); err != nil {
         panic("failed to init tables in database")
     }
