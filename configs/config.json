@@ -6,9 +6,5 @@
     "ssl_mode": "disable",
     "user": "postgres",
     "password": "pass"
-  },
-  "app": {
-    "bind_addr": ":8000",
-    "log_level": "debug"
   }
 }

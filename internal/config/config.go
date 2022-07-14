@@ -13,10 +13,6 @@ type Config struct {
         User     string `json:"user" env-description:"Db user" env-default:"postgres"`
         Password string `json:"password" env-description:"Db password" env-default:"pass"`
     } `json:"database"`
-    App struct {
-        BindAddr string `json:"bind_addr" env-description:"Server bind addr" env-default:":8080"`
-        LogLevel string `json:"log_level" env-description:"App log level" env-default:"info"`
-    } `json:"app"`
 }
 
 func NewConfig() (cfg Config, _ error) {
